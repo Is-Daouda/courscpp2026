@@ -9,7 +9,7 @@ int main()
 
     int valeur, multiplicateurInferieur, multiplicateurSuperieur;
 
-    cout << "--- Programme de multiplication d'un nombre. ---" << endl;
+    cout << "--- Programme de table de multiplication. ---" << endl;
     cout << "Entrez le nombre à multiplier: " << endl;
     cout << "Entrez le nombre à multiplier: " << endl;
     cin >> valeur;
