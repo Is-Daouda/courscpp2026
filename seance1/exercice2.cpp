@@ -10,6 +10,7 @@ int main()
     int nombreNote;
     float moyenneGenerale, noteTotal(0.f);
 
+    cout << "--- Programme de sommation de note et de calcul de moyenne générale. ---" << endl;
     cout << "Entrez le nombre note: " << endl;
     cin >> nombreNote;
     float* lesNotes = new float[nombreNote];
