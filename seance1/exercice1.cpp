@@ -11,7 +11,6 @@ int main()
 
     cout << "--- Programme de table de multiplication. ---" << endl;
     cout << "Entrez le nombre à multiplier: " << endl;
-    cout << "Entrez le nombre à multiplier: " << endl;
     cin >> valeur;
     cout << "Entrez le nombre à partir du quel la multiplication va commencer: " << endl;
     cin >> multiplicateurInferieur;
