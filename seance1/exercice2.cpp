@@ -28,7 +28,9 @@ int main()
     for (int i(0); i < nombre; i++)
     {
         cout << "Etudiant N°" << i + 1 << " : " << lesNotes[i] << endl;
-        if (lesNotes[i] > moyenneGenerale) cout << "La note de l'étudiant N°" << i + 1 << " qui est " << lesNotes[i] << " est supérieur à la moyenne " << moyenneGenerale << endl;
+        if (lesNotes[i] > moyenneGenerale) {
+            cout << "La note de l'étudiant N°" << i + 1 << " qui est " << lesNotes[i] << " est supérieur à la moyenne " << moyenneGenerale << endl;
+        }
     }
 
     return 0;
