@@ -4,6 +4,14 @@
 using namespace std;
 
 void saisieNote(int nombre, float &noteTotal, float lesNotes[])
+/** \brief Fonction pour entrer les notes des étudiants
+ *
+ * \param nombre
+ * \param noteTotal
+ * \param lesNotes[]
+ * \return void
+ *
+ */
 {
     for (int i(0); i < nombre; i++)
     {
@@ -14,11 +22,27 @@ void saisieNote(int nombre, float &noteTotal, float lesNotes[])
 }
 
 float calculMoyenne(float noteTotal, int nombre)
+/** \brief Fonction pour calculer la moyenne générale
+ *
+ * \param noteTotal
+ * \param nombre
+ * \return float
+ *
+ */
 {
     return noteTotal / nombre;
 }
 
 void affichage(int nombre, float moyenneGenerale, float noteTotal, float lesNotes[])
+/** \brief Fonction pour afficher les notes des étudiants et la moyenne générale
+ *
+ * \param nombre
+ * \param moyenneGenerale
+ * \param noteTotal
+ * \param lesNotes[]
+ * \return void
+ *
+ */
 {
     cout << "La moyenne générale dans la matière est : " << moyenneGenerale << endl;
     cout << "Les notes enrégistrées: " << endl;
