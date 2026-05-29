@@ -2,7 +2,7 @@
  * Purpose : Fichier d'entête
  * Authors : DAOUDA NOUHOUN Ismael
  * Created : 26/05/2026
- * Update  : 28/05/2026
+ * Update  : 29/05/2026
  **/
 
 #ifndef CONTINENT_H
