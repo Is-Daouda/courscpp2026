@@ -7,15 +7,15 @@
 
 #include "continent.h"
 
-void addContinent(std::string code, std::string name, sqlite3* m_db)
+void addContinent(std::string code, std::string name, sqlite3* db)
 /**
  * Purpose : Fonction pour ajouter un Continent.
  */
 {
     const char* sql = "INSERT INTO continent (codeContinent, nomContinent) VALUES (?, ?);";
     sqlite3_stmt* stmt;
-    if (sqlite3_prepare_v2(m_db, sql, -1, &stmt, nullptr) != SQLITE_OK) {
-        std::cerr << "Erreur Create (Prepare) : " << sqlite3_errmsg(m_db) << std::endl;
+    if (sqlite3_prepare_v2(db, sql, -1, &stmt, nullptr) != SQLITE_OK) {
+        std::cerr << "Erreur Create (Prepare) : " << sqlite3_errmsg(db) << std::endl;
         return;
     }
 
@@ -27,20 +27,20 @@ void addContinent(std::string code, std::string name, sqlite3* m_db)
     if (sqlite3_step(stmt) == SQLITE_DONE) {
         std::cout << "Continent inséré avec succès!\n\n";
     } else {
-        std::cerr << "Échec de l'insertion : " << sqlite3_errmsg(m_db) << std::endl;
+        std::cerr << "Échec de l'insertion : " << sqlite3_errmsg(db) << std::endl;
     }
     sqlite3_finalize(stmt);
 }
 
-void listContinent(sqlite3* m_db)
+void listContinent(sqlite3* db)
 /**
  * Purpose : Fonction pour afficher les Continents de la base de données.
  */
 {
     const char* sql = "SELECT codeContinent, nomContinent FROM continent;";
     sqlite3_stmt* stmt;
-    if (sqlite3_prepare_v2(m_db, sql, -1, &stmt, nullptr) != SQLITE_OK) {
-        std::cerr << "Erreur Read (Prepare) : " << sqlite3_errmsg(m_db) << std::endl;
+    if (sqlite3_prepare_v2(db, sql, -1, &stmt, nullptr) != SQLITE_OK) {
+        std::cerr << "Erreur Read (Prepare) : " << sqlite3_errmsg(db) << std::endl;
         return;
     }
     std::cout << "\n===================== LISTE DES CONTINENTS =====================\n";

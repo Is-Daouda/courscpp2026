@@ -15,11 +15,11 @@
 /**
  * Purpose : Fonction pour ajouter un Continent.
  */
-void addContinent(std::string code, std::string name, sqlite3* m_db);
+void addContinent(std::string code, std::string name, sqlite3* db);
 
 /**
  * Purpose : Fonction pour afficher les Continents de la base de données.
  */
-void listContinent(sqlite3* m_db);
+void listContinent(sqlite3* db);
 
 #endif // CONTINENT_H
