@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Gestion_De_Courriers" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc-mingw32" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/Gestion_De_Courriers" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc-mingw32" />
+				<Compiler>
+					<Add directory="include" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/Gestion_De_Courriers" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc-mingw32" />
+				<Compiler>
+					<Add directory="include" />
+				</Compiler>
+			</Target>
+		</Build>
+		<Unit filename="include/BoiteAuxLettres.h" />
+		<Unit filename="include/Colis.h" />
+		<Unit filename="include/Courrier.h" />
+		<Unit filename="include/Lettre.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="src/BoiteAuxLettres.cpp" />
+		<Unit filename="src/Colis.cpp" />
+		<Unit filename="src/Courrier.cpp" />
+		<Unit filename="src/Lettre.cpp" />
+		<Extensions>
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
